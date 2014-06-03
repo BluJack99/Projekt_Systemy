@@ -26,6 +26,16 @@ float iloczynSkalarny(float *wektorA, float *wektorB, float wymiarWektora) {
 }
 
 
+float iloczynSkalarny2(float *wektorA, float wymiarWektora) {
+        int i = 0;
+        float iloczynSkalarny2 = 0;
+        for(i = 0; i < wymiarWektora; i++) {
+               
+                iloczynSkalarny2 = iloczynSkalarny2 + wektorA[i] * wektorA[i]; 
+                
+        }
+        return iloczynSkalarny2;
+}
 
 
 
