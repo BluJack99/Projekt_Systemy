@@ -48,4 +48,10 @@ int main() {
         float wektorB[s];
         double tab[1][s];
         
+         cout << "Wybierz opcje: "<<endl;
+         cout << "1. Ortogonalizacja wektorow"<<endl;
+         cout << "2. Obliczenie ukladu rownan metoda eliminacji Gaussa"<<endl<<endl;
+         cout << "Wcisnij 1 lub 2: ";
+         cin >> opcja;      
+        
         }
