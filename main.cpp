@@ -39,6 +39,30 @@ float iloczynSkalarny2(float *wektorA, float wymiarWektora) {
 
 
 
+double tab2[100][100];
+int N;
+double Xi[100];
+bool zdegradowana = false;
+
+void zamianaWierszy (int r, int t)
+{
+        double tmp = 0.0;
+        for (int i = 0; i < N+1; i++)
+        {
+ 
+                tmp = tab2[r][i];
+                tab2[r][i] = tab2[t][i];
+                tab2[t][i] = tmp;
+        }
+ 
+}
+ 
+void wypisanieTab();
+
+
+
+
+
 
 int main() {
 
