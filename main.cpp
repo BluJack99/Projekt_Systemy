@@ -56,6 +56,30 @@ void zamianaWierszy (int r, int t)
 }
 
 
+double tab2[100][100];
+int N;
+double Xi[100];
+bool zdegradowana = false;
+
+void zamianaWierszy (int r, int t)
+{
+        double tmp = 0.0;
+        for (int i = 0; i < N+1; i++)
+        {
+ 
+                tmp = tab2[r][i];
+                tab2[r][i] = tab2[t][i];
+                tab2[t][i] = tmp;
+        }
+ 
+}
+ 
+void wypisanieTab();
+
+
+
+
+
 
 int main() {
 
@@ -64,5 +88,11 @@ int main() {
 	    float wektorA[s]; 
         float wektorB[s];
         double tab[1][s];
+        
+         cout << "Wybierz opcje: "<<endl;
+         cout << "1. Ortogonalizacja wektorow"<<endl;
+         cout << "2. Obliczenie ukladu rownan metoda eliminacji Gaussa"<<endl<<endl;
+         cout << "Wcisnij 1 lub 2: ";
+         cin >> opcja;      
         
         }
