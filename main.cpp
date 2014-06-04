@@ -5,7 +5,7 @@
 #include <stdlib.h>
 #include <cmath>
 
-//Projekt na Systemy operacyjne, autorzy: Micha³ Bazyd³o, Tomasz Wyszyñski, Ilya Shauliuk
+//Projekt na Systemy operacyjne, autorzy: Michaï¿½ Bazydï¿½o, Tomasz Wyszyï¿½ski, Ilya Shauliuk
 
 
 using namespace std;
@@ -35,24 +35,6 @@ float iloczynSkalarny2(float *wektorA, float wymiarWektora) {
                 
         }
         return iloczynSkalarny2;
-}
-
-double tab2[100][100];
-int N;
-double Xi[100];
-bool zdegradowana = false;
-
-void zamianaWierszy (int r, int t)
-{
-        double tmp = 0.0;
-        for (int i = 0; i < N+1; i++)
-        {
- 
-                tmp = tab2[r][i];
-                tab2[r][i] = tab2[t][i];
-                tab2[t][i] = tmp;
-        }
- 
 }
 
 
