@@ -76,6 +76,24 @@ void zamianaWierszy (int r, int t)
  
 void wypisanieTab();
 
+void przeksztalcenieTab(int m)
+{
+       
+        if (m > 1)
+        {
+                int max = 0;
+                for (int i = N-m; i < N; i++)
+                {
+                        if (tab2[i][N-m] > tab2[N-m][N-m])
+                                zamianaWierszy(N-m,i);
+                }
+               
+ 
+                przeksztalcenieTab(m-1);
+ 
+               
+        }
+}
 
 
 
