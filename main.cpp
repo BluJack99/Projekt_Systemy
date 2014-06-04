@@ -93,6 +93,59 @@ int main() {
          cout << "1. Ortogonalizacja wektorow"<<endl;
          cout << "2. Obliczenie ukladu rownan metoda eliminacji Gaussa"<<endl<<endl;
          cout << "Wcisnij 1 lub 2: ";
-         cin >> opcja;      
+         cin >> opcja;  
+         
+         
+         switch(opcja){
+
+case 1:
+{
+
+	
+      cout<<endl<<endl<<"\t\tWybrales ortogonalizacje Grama-Schimdta"<<endl<<endl;
+	  cout << "\tPodaj rozmiar wektora A i B: ";
+	  cin >> s;
+	  cout<<endl;
+		for(int i=0; i<s; ++i){
+	    	cout << "\tPodaj liczbe nr " << i << ": ";
+	    	cin >> wektorA[i];
+	    }
+	    cout<<endl;
+	    cout << "\tWektor A: ";
+	    for(int i=0; i<s; ++i){
+	    	cout << wektorA[i]<< " ";
+	    	}
+	    	cout << endl;
+	    	cout << endl;
+	    for(int i=0; i<s; ++i){
+	    	cout << "\tPodaj liczbe nr " << i << ": ";
+	    	cin >> wektorB[i];
+	    
+}
+        cout << endl;
+   
+	    cout << "\tWektor B: ";
+	    for(int i=0; i<s; ++i){
+	    	cout << wektorB[i]<< " ";
+	    	}
+	    
+	    	cout << endl<<endl;
+	    	cout << "\tIloczyn skalarny A*B= " << iloczynSkalarny(wektorA, wektorB, s) << endl<<endl;
+	        cout << "\tIloczyn skalarny A*A= " << iloczynSkalarny2(wektorA, s) << endl<<endl;
+			cout <<endl;
+	    
+	    
+	    float il=iloczynSkalarny(wektorB, wektorA,s);
+	    float il2=iloczynSkalarny2(wektorA,s);
+			
+			cout << "\t\tOrtogonalizacja Grama-Schimdta: ";
+	    	for(int i=0; i<s; ++i){
+	    	  float Orto;
+	    		Orto=Orto=(wektorB[i]-(il/sqrt(il2*il2))*wektorA[i]);
+	    	cout << Orto<< " ";
+	    
+	    	} 
+break;            
+}    
         
         }
