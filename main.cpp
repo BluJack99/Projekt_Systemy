@@ -78,7 +78,41 @@ void przeksztalcenieTab(int m)
 }
 
 
-
+void wypisanieTab()
+{
+       
+        for (int i=0; i < N; i++)
+        {
+                for (int j = 0; j < N+1; j++)
+                {
+                        if (j < N) 
+						cout <<tab2[i][j]<<"  ";
+                        else cout << tab2[i][j];
+                       
+                }
+ 
+                cout << endl;
+        }
+}
+ 
+void wczytTab()
+{
+        
+        for (int i=0; i < N; i++)
+                for (int j = 0; j < N; j++)
+                {
+                        cout << "\tPodaj liczbe dla [" << i+1 << "," << j+1 << "] = ";
+                        cin >> tab2[i][j];
+                }
+ 
+        cout << endl << endl;
+        for (int i = 0; i < N; i++)
+        {
+                cout << "\tPodaj wyrazy wolne dla wiersza nr " << i+1 << ": ";
+                cin >> tab2[i][N];
+        }
+}
+ 
 
 
 int main() {
