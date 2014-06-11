@@ -8,7 +8,7 @@
 
 using namespace std;
 
-//Autorzy: Micha³ Bazyd³o, Tomasz Wyszyñski, Ilya Shauliuk
+
 
 
 
